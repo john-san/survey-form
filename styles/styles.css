@@ -1,0 +1,27 @@
+body {
+	background-color: #ABD6D0;
+}
+
+form {
+	background-color: #FAFAFA;
+	padding: 3.5% 5%;
+	border-radius: 4px;
+}
+
+#title, #description {
+	text-align: center;
+}
+
+.two-grid-md {
+	display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
+  padding-right: 5%;
+}
+.two-grid-md label {
+	justify-self: end;
+}
+
+.two-grid-md input {
+	justify-self: start;
+}
