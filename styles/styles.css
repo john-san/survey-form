@@ -12,16 +12,35 @@ form {
 	text-align: center;
 }
 
-.two-grid-md {
-	display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 10px;
-  padding-right: 5%;
-}
-.two-grid-md label {
-	justify-self: end;
+#description {
+  margin-bottom: 30px;
 }
 
-.two-grid-md input {
-	justify-self: start;
+/* grid is 1 columns @100% on mobile */
+.two-grid-md {
+  display: flex;
+  flex-direction: column;
+  /*grid-template-columns: 100%;
+  grid-row-gap: 10px; */
+}
+
+input {
+  padding: 6px 4px;
+}
+
+@media (min-width: 768px) {
+  .two-grid-md {
+  	display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    padding-right: 5%;
+  }
+  .two-grid-md label {
+  	justify-self: end;
+  	text-align: right;
+  }
+  
+  .two-grid-md input {
+  	justify-self: start;
+  }
 }
