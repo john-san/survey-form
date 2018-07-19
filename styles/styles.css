@@ -18,16 +18,16 @@ form {
 
 /* grid is 1 columns @100% on mobile */
 .two-grid-md {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
 	padding: 5px;
 }
 
-input {
+input, textarea {
   padding: 6px 4px;
 }
 
-.two-grid-md input, .two-grid-md select {
+.two-grid-md input, .two-grid-md select, .two-grid-md textarea {
 	margin: 10px 0;
 }
 
@@ -41,6 +41,16 @@ fieldset {
 	border: 0;
 }
 
+#submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #59ACE0;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 18px;
+}
+
 @media (min-width: 768px) {
 	input, select, .two-grid-md .radio-group input {
 		margin-top: 0;
@@ -48,7 +58,7 @@ fieldset {
 
   .two-grid-md {
   	display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, 50% 50%);
     grid-column-gap: 10px;
 		align-items: center;
     padding-right: 5%;
@@ -59,10 +69,15 @@ fieldset {
   }
   
   .two-grid-md input {
-  	justify-self: start;
+  	justify-self: stretch;
   }
 	
-	.two-grid-md label[for="recommend"] {
+	label[for="recommend"], label[for="message"] {
 		align-self: start;
 	}
+	label[for="message"] {
+	  padding-top: 12px;
+	}
+	
+	
 }
