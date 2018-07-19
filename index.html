@@ -14,87 +14,79 @@
 		
 		<div class="two-grid-md">
 			<label for="name" id="name-label">* Name: </label>
-			<input type="text" name="name" id="name" placeholder="Enter your name" required></input><br>
-    </div>
-		
-		<div class="two-grid-md">
+			<input type="text" name="name" id="name" placeholder="Enter your name" required></input>
+    
 			<label for="email" id="email-label">* Email: </label>
-			<input type="email" name="email" id="email" placeholder="Enter your Email" required></input><br>
-    </div>
-		
-		<div class="two-grid-md">
+			<input type="email" name="email" id="email" placeholder="Enter your Email" required></input>
+   
 			<label for="age" id="number-label">* Age: </label>
-			<input type="number" name="age" id="age" min="1" max="100" placeholder="Age" required></input><br>
-		</div>
+			<input type="number" name="age" id="age" min="1" max="100" placeholder="Age" required></input>
+	
+			<label for="role">Which option best describes your in-game role?</label>
+			<select name="role" form="#" id="dropdown">
+				<option value="" disabled selected>Select an option</option>
+				<option value="dps">DPS</option>
+				<option value="tank">Tank</option>
+				<option value="support">Support</option>
+				<option value="flex">Flex</option>
+			</select>
+	
+			<label for="recommend">How likely are you to recommend Overwatch to a friend?</label>
+			<div class="radio-group">
+				<input type="radio" name="recommend" value="Definitely">Definitely<br>
+				<input type="radio" name="recommend" value="maybe">Maybe<br>
+				<input type="radio" name="recommend" value="no">No<br>
+			</div>
 
-  <div class="two-grid-md">
-    <label for="role">Which option best describes your in-game role?</label>
-		<select name="role" form="#" id="dropdown">
-			<option value="" disabled selected>Select an option</option>
-			<option value="dps">DPS</option>
-			<option value="tank">Tank</option>
-			<option value="support">Support</option>
-			<option value="flex">Flex</option>
-		</select><br>
+			<label for="favmode">Which mode do you like the most in Overwatch?</label>
+			<select name="favmode" form="#" id="favmode">
+				<option value="" disabled selected>Select an option</option>
+				<option value="competitive">Competitive</option>
+				<option value="quickplay">Quick Play</option>
+				<option value="arcade">Arcade</option>
+				<option value="customgames">Custom Games</option>
+			</select>
 		</div>
-		
-		<label for="recommend">How likely are you to recommend Overwatch to a friend?</label><br>
-		<input type="radio" name="recommend" value="Definitely">Definitely<br>
-		<input type="radio" name="recommend" value="maybe">Maybe<br>
-		<input type="radio" name="recommend" value="no">No<br>
-  
-		<label for="favmode">Which mode do you like the most in Overwatch?</label>
-		<select name="favmode" form="#" id="favmode">
-			<option value="" disabled selected>Select an option</option>
-			<option value="competitive">Competitive</option>
-			<option value="quickplay">Quick Play</option>
-			<option value="arcade">Arcade</option>
-			<option value="customgames">Custom Games</option>
-		</select><br>
 	
 	
 		<fieldset>
 			<legend>Things that should be improved in the future (Check all that apply):</legend>
-			<div>
+			<div class="checkbox-group">
 				<label for="playerpunishment">Player Punishment</label>
 				<input type="checkbox" id="playerpunishment" name="improve" value="playerpunishment">
-			</div>
-			<div
+			
 				<label for="characterbalance">Character Balance</label>
 				<input type="checkbox" id="characterbalance" name="improve" value="characterbalance">
-			</div>
-			<div>
+			
 				<label for="smurfreduction">Smurf Reduction</label>
 				<input type="checkbox" id="smurfreduction" name="improve" value="smurfreduction">
-			</div>
-			<div
+			
 				<label for="matchmaking">Matchmaking System</label>
 				<input type="checkbox" id="matchmaking" name="improve" value="matchmaking">
-			</div>
-			<div>
+			
 				<label for="community">Community Engagement</label>
 				<input type="checkbox" id="community" name="improve" value="community">
-			</div>
-			<div
+			
 				<label for="skins">Character Skins</label>
 				<input type="checkbox" id="skins" name="improve" value="skins">
-			</div>
-			<div>
+			
 				<label for="gamemodes">Game Modes</label>
 				<input type="checkbox" id="gamemodes" name="improve" value="gamemodes">
-			</div>
-			<div
+			
 				<label for="lookforgroup">Look for Group Feature</label>
 				<input type="checkbox" id="lookforgroup" name="improve" value="lookforgroup">
 			</div>
 		</fieldset>
 		
 		
+		
 		<label for="message">Any Comments or Suggestions?</label>
-		<textarea id="message" name="message" form="#" rows="4" cols="50">Enter your comment here...</textarea><br>
+		<textarea id="message" name="message" form="#" rows="4" cols="50">Enter your comment here...</textarea>
 
 		
     <input type="submit" id="submit" value="Submit">
+		
+		
   </form>
 	
 </body>
